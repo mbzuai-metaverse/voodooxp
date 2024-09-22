@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="VOODOO XP Project Page">
+  <meta property="og:title" content="VOODOO XP Project Page"/>
+  <meta property="og:description" content="Official project page for VOODOO XP"/>
+  <meta property="og:url" content="https://p0lyfish.github.io/voodoo3d/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="./voodoo3d/static/images/teaser.jpg" />
+  <meta property="og:image:secure_url" content="./voodoo3d/static/images/teaser.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="VOODOO XP Project Page">
+  <meta name="twitter:description" content="Official project page for VOODOO XP">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="https://p0lyfish.github.io./voodoo3d/static/images/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="mbzuai, ethz, vinai, pinscreen, facialreenactment, voodoo3d, volumetric, portrait, reenactment, oneshot, headreenactment, computervision, neuralradiancefield, avatar, singleview, cvpr, disentanglement, lookingglass, holographicdisplay, virtualreality, digitalhuman, virtualhuman">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VOODOO XP</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+      <style>
+        .image-right {
+            float: right;
+            width: 50%; /* Adjust the width as needed */
+            margin-left: 20px; /* Adds space between the text and image */
+        }
+
+        .text {
+            width: 45%; /* Adjust the width of the text if necessary */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">VOODOO XP: Expressive One-Shot Head Reenactment for VR Telepresence</h1>
+            <h1 class="title is-size-3 publication-title">SIGGRAPH Asia Tokyo 2024</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://p0lyfish.github.io" target="_blank">Phong Tran<sup>1</sup></a>,
+	      </span>
+
+	      <span class="author-block">
+	        <a href="https://egorzakharov.github.io/" target="_blank">Egor Zakharov<sup>2</sup></a>,
+	      </span>
+
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=w3vrRqsAAAAJ&hl=en" target="_blank">Long Nhat Ho<sup>1</sup></a>,
+	      </span>
+
+	      <span class="author-block">
+		<a href="https://scholar.google.com/citations?user=Mvq6pGcAAAAJ&hl=en" target="_blank">Liwen Hu<sup>4</sup></a>,
+	      </span>
+
+	      <span class="author-block">
+		<a href="https://www.linkedin.com/in/adilbek-karmanov?originalSubdomain=ae" target="_blank">Adilbek Karmanov<sup>1</sup></a>,
+	      </span>
+
+              <span class="author-block">
+                <a href="https://avi.artstation.com/" target="_blank">Aviral Agarwal<sup>4</sup></a>,
+	      </span>
+
+              <span class="author-block">
+                <a href="https://dblp.org/pid/295/9556.html" target="_blank">McLean Goldwhite<sup>4</sup></a>,
+	      </span>
+
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/ariana-bermudez/" target="_blank">Ariana Bermudez Venegas<sup>1</sup></a>,
+	      </span>
+
+              <span class="author-block">
+         	<a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank">Anh Tuan Tran<sup>3</sup></a>,
+	      </span>
+
+	      <span class="author-block">
+		<a href="https://www.hao-li.com/" target="_blank">Hao Li<sup>1,4</sup></a>
+	      </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup><a href="https://mbzuai.ac.ae/" target=" blank">MBZUAI</a>, <sup>2</sup><a href="https://ethz.ch/en.html" target=" blank">ETH Zurich</a>, <sup>3</sup> <a href="https://www.vinai.io/" target=" blank">VinAI Research</a>, <sup>4</sup><a href="https://www.pinscreen.com/" target=" blank">Pinscreen</a></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2405.16204" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/mbzuai-metaverse/voodooxp-official" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Youtube link -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=CNXctCA5RXM" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+                </span>
+
+                <!-- Youtube link -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=EmMqhinPdMk" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Telepresence System</span>
+                </a>
+                </span>
+
+                <!-- Youtube link -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=Gm1B5DT8kE0&t=2657s" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>SIGGRAPH 2023 RTL</span>
+                </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="video2" autoplay muted loop playsinline height="100%">
+        <!-- Your video file here -->
+        <source src="static/videos/teaser.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+	      We introduce <b>VOODOO XP</b>, a real-time, 3D-aware one-shot head reenactment method that generates expressive facial animations from any driver video and a single 2D portrait. Our solution enables and end-to-end VR telepresence system.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+	  We introduce VOODOO XP: a 3D-aware one-shot head reenactment method that can generate highly expressive facial expressions from any input driver video and a single 2D portrait. Our solution is real-time, view-consistent, and can be instantly used without calibration or fine-tuning. We demonstrate our solution on a monocular video setting and an end-to-end VR telepresence system for two-way communication. Compared to 2D head reenactment methods, 3D-aware approaches aim to preserve the identity of the subject and ensure view-consistent facial geometry for novel camera poses, which makes them suitable for immersive applications. While various facial disentanglement techniques have been introduced, cutting-edge 3D-aware neural reenactment techniques still lack expressiveness and fail to reproduce complex and fine-scale facial expressions. We present a novel cross-reenactment architecture that directly transfers the driver's facial expressions to transformer blocks of the input source's 3D lifting module. We show that highly effective disentanglement is possible using an innovative multi-stage self-supervision approach, which is based on a coarse-to-fine strategy, combined with an explicit face neutralization and 3D lifted frontalization during its initial training stage. We further integrate our novel head reenactment solution into an accessible high-fidelity VR telepresence system, where any person can instantly build a personalized neural head avatar from any photo and bring it to life using the headset. We demonstrate state-of-the-art performance in terms of expressiveness and likeness preservation on a large set of diverse subjects and capture conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- facial reenactment carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparisons</h2>
+      <div id="results-carousel" class="carousel results-carousel" align="center">
+       <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparisons/001.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparisons/002.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparisons/003.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/comparisons/004.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End facial reenactment carousel -->
+
+<!-- Fewshot carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Optional Few-shot Fine-tuning</h2>
+      <video poster="" id="video2" autoplay muted loop height="100%">
+        <!-- Your video file here -->
+        <source src="static/videos/fewshot/fewshot.mp4"
+        type="video/mp4">
+      </video>
+</div>
+</div>
+</section>
+<!-- End fewshot carousel -->
+
+<!-- Real-time Reenactment application carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">One-Shot 3D Head Reenactment</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/normal_app/self.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/normal_app/cross.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End rotation carousel -->
+
+<!-- Telepresence VR carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Telepresence VR System</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/vr/avatar_creation.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/vr/cross_reenactment.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/vr/twoway_self.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/vr/twoway_cross.mp4"
+            type="video/mp4">
+          </video>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End rotation carousel -->
+
+
+<!-- Methodology -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Architecture. -->
+      <h2 class="title is-3">Methodology</h2>
+      <p>
+	  <b>Overview.</b> We introduce a novel 3D-aware neural head reenactment architecture using a transformer-based expression transfer approach for generating highly expressive facial expressions in real-time. For effective volumetric disentanglement of complex expressions, we propose a multi-stage training approach based on face neutralization and 3D lifted frontalization, coarse-to-fine training, and global fine-tuning. Finally, We present the first end-to-end VR telepresence solution based on a one-shot 3D head reenactment algorithm.
+	  <br/><br/>
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <img src="static/images/architecture.jpg" style="max-width: 100%;" alt="Architecture"/>
+      </div>
+        <div class="content has-text-justified">
+	  <b>3D Lifting and Rendering.</b> We use the state-of-the-art Lp3D model [Trevithick et al. 2023] for 3D lifting, which transforms a 2D input image into a 3D neural radiance field. The model architecture is shown in the lower part of the above figure. To enhance expression and identity generalization, we trained this module with a combination of the Nersemble dataset, which contains millions of diverse expressions, and a synthetic dataset generated by DiffPortrait3D, a diffusion-based 3D lifting model.<br></br>
+	  <b>Expression Transferring.</b> As shown in previous works, the first branch of Lp3D extracts global features, such as the geometry of the head, while the second branch extracts high-frequency details. Therefore, given a pre-trained Lp3D model, we can modify the expression of a given source image by directly modifying its intermediate features in the low-level branch. To this end, we propose a new architecture for expression transfer as shown in the upper part of the above figure. On top of a pre-trained 3D lifting network, we add a trainable expression transfer module to alter the expression. This module first uses a vision transformer initialized from DINO to extract an expression vector from the driver image. The extracted expression vector is then used to directly modify intermediate low-level features within the 3D lifting module through several cross and self-attention layers, altering the expression of the source image.<br></br>
+	  <b>Multi-stage Training.</b> To stabilize the self-supervision of our transformer-based expression transfer model, we divide the training into multiple stages. The first stage uses several techniques to prevent identity leakage, so that the identity information of the driver does not neutralized image Volumetric Renderer neutral pose leak into the reenacted image. These methods include driver 3D lifted head frontalization, augmentation, and a novel neutralizing loss to minimize the difference between the neutralized source and the neutralized cross-reenacted image. In the second stage, we introduce a fine-scale training strategy using the model from the first stage to supervise a higher resolution model training with the help of generated synthetic drivers. This approach allows us to disable all constraints used in the previous step that might compromise expression quality, thereby further enhancing the expressiveness of the output. In the third stage, we adopt global fine-tuning, by unfreezing the 3D lifting module and applying GAN loss to increase the high-frequency details of the reenacted images. Additionally, per-subject fine-tuning can be introduced as an optional step to improve the likeness and the expressiveness of the target identity. <br></br>
+	  <b>Telepresence VR System.</b>
+	  <img src="./static/images/vr_system.jpg"
+                                           alt="VR System"
+                                           class="image-right">
+	  Our complete VR telepresence system is illustrated in Fig. 5. For VR-based facial performance capture, we simply use Meta’s Movement SDK [Meta 2024a] and Headset Tracking SDK [Meta 2024b], as input signals to a Unity game engine [Unity 2024] scene with a generic parametric blendshape model. The facial expressions consist of 63 blendshapes (7 for tongue) and 2 gaze controls (angles) for each eye. This generic face model is then animated and rendered using a traditional computer graphics (CG) pipeline to produce a live video stream, which serves as input to our neural head reenactment framework.
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Methodology -->
+
+
+<!-- full video-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <h2 class="title is-3">More Video Results</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/CNXctCA5RXM?si=6gS_iDy7-Kb09PAZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End full video -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{tran2024voodoo,
+  title={VOODOO XP: Expressive One-Shot Head Reenactment for VR Telepresence},
+  author={Tran, Phong and Zakharov, Egor and Ho, Long-Nhat and Hu, Liwen and Karmanov, Adilbek and Agarwal, Aviral and Goldwhite, McLean and Venegas, Ariana Bermudez and Tran, Anh Tuan and Li, Hao},
+  journal={arXiv preprint arXiv:2405.16204},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+<!-- Default Statcounter code for VOODOO 3D
+https://p0lyfish.github.io/voodoo3d/ -->
+<script type="text/javascript">
+var sc_project=12948107; 
+var sc_invisible=1; 
+var sc_security="8b4e6576"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="web stats"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12948107/0/8b4e6576/1/"
+alt="web stats"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  </body>
+  </html>
